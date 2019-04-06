@@ -1,0 +1,72 @@
+body{
+    background-color:rgb(212, 230, 241);
+    color: rgb(21, 67, 96);
+    text-align: center;
+    font-family:noteworthy, arial;
+    }
+
+h1,h2{
+     font-size:2em;
+     text-shadow: 4px 4px 4px white;
+     clear:both;
+     }
+
+h3 {
+   text-align:center;
+   text-shadow: 4px 4px 4px white; 
+   }
+
+img{width: 80%;}
+
+#grid-floats .grid-item {
+                        width:17%;
+                        height: 500px;
+                        margin-left: 4%;
+                        margin-bottom: 2%;
+                        float: left;  
+                       }
+
+#grid-floats :nth-child(1){width:40%;}
+
+li{
+   list-style-type: none;
+   text-align:center;
+   border:8px solid rgb(174, 214, 241);
+   border-radius:80px;
+   overflow: auto;
+   padding:20px;
+  }
+
+#grid-flex{
+           display: flex;
+           flex-flow:row wrap;   
+          }
+
+#grid-flex .grid-item{
+                      width: 20%;
+                      margin:2%;
+                     }
+
+#grid-flex :nth-child(1) {width: 40%;}
+
+@media all and (min-width:320px) and (max-width:900px){
+    img{width: 150px;}  
+
+    #grid-floats .grid-item{
+                            height: auto;
+                            width:84%;
+                            margin:4%;
+                           }
+    #grid-floats :nth-child(1){width:84%;}
+ 
+     #grid-flex{
+                 display: flex;
+                 flex-flow:row wrap;   
+                }
+       
+    #grid-flex .grid-item{
+                          width: 84%;
+                          margin: 4%;
+                         }
+
+    #grid-flex :nth-child(1){width: 84%;}}
